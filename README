@@ -1,0 +1,12 @@
+
+DayTime Sever 
+
+This is a sever which when Pinged return the current Date and time in its local time zone.
+
+
+How to use
+
+***Telnet***
+
+-> telnet 127.0.0.1(or host_ip)  12345
+
