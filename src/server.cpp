@@ -19,6 +19,7 @@
  * 6 -> get current time using ctime 
  * 7 -> use asio::write to write to the socket using asio::buffer and passing the error
  * 8 -> catch error
+ * */
 
 using asio::ip::tcp;
 
@@ -34,7 +35,7 @@ int main()
 	{
 		asio::io_context io;
 
-		tcp::acceptor acceptor(io, tcp::endpoint(tcp::v4(), 3000));
+		tcp::acceptor acceptor(io, tcp::endpoint(asio::ip::address_v4::any(), 3000));
 
 		for (;;)
 		{
